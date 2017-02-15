@@ -14,8 +14,8 @@ namespace StudyMvc.DAL
             //base.Seed(context);
             var sysUsers = new List<SysUser>
             {
-                new SysUser { UserName="Tom", Password="1" },
-                new SysUser { UserName="Jack",Password="2" }
+                new SysUser { UserName="Tom", Password="1",Email="1@1.1" },
+                new SysUser { UserName="Jack",Password="2" ,Email="2@2.2" }
             };
             sysUsers.ForEach(s => context.SysUsers.Add(s));
             context.SaveChanges();
